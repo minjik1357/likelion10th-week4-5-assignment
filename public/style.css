@@ -1,0 +1,369 @@
+* {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+header {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  border-top: 3px double;
+  border-bottom: 3px dotted;
+}
+
+.flex {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.profile-image {
+  position: relative;
+  width: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.profile-image:hover .overlay {
+  opacity: 1;
+}
+
+.text1 {
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text2 {
+  text-align: center;
+}
+
+ul {
+  clear: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  border-top: 3px dotted;
+  border-bottom: 3px dotted;
+}
+
+h4 {
+  text-align: center;
+  font-size: 17px;
+}
+
+.giveup {
+  display: flex;
+  justify-content: center;
+}
+
+.estp {
+  display: flex;
+  text-align: center;
+
+}
+
+/* MBTI E */
+
+.container1 {
+  position: relative;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlaye {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container1:hover .overlaye {
+  width: 100%;
+  left: 0;
+}
+
+.texte {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* MBTI S */
+
+.container2 {
+  position: relative;
+}
+
+.overlays {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container2:hover .overlays {
+  width: 100%;
+  left: 0;
+}
+
+.texts {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* MBTI T */
+
+.container3 {
+  position: relative;
+}
+
+.overlayt {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container3:hover .overlayt {
+  width: 100%;
+  left: 0;
+}
+
+.textt {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* MBTI P */
+
+.container4 {
+  position: relative;
+  width: 50%;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayp {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container4:hover .overlayp {
+  width: 100%;
+  left: 0;
+}
+
+.textp {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ch-img-wrap {
+  text-align: center;
+}
+
+.ch-img {
+  border-radius: 50%;
+  object-fit:cover;
+  width:300px;
+  height:300px;
+  padding: 50px;
+  border: solid 1px #CCC"
+}
+
+.text-wrap {
+  display: flex;
+}
+
+.kpop-text {
+  margin-left: 10.5%;
+  margin-right: 2%;
+  text-align: center;
+}
+
+.apple-text {
+  margin-left: 5.5%;
+}
+
+.pororo-text {
+  margin-left: 6%;
+  text-align: center;
+}
+
+.video-wrap {
+  text-align: center;
+}
+
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  border-top: 3px dotted;
+  border-bottom: 3px double;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.answer {
+  cursor: pointer;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.phoneNum:hover {
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.emailAdd:hover {
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.instagramID:hover {
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.address:hover {
+  background-color: gray;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.container {
+  text-align: center;
+}
+
+.thankyou {
+  width: 400px;
+}
