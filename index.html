@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>강민지의 짜릿한 자기소개페이지</title>
+  
+  
+  <script>
+    function changeMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    };
+
+    function toggleImg() {
+        document.getElementById("thankyou").src = "./img/제리 인사 후.png";
+      };
+    
+    function confirmModal() {
+      if (window.confirm("정말 기권을..하시겠습니까?")) {
+        document.body.style.background = "#EACECE ";
+        alert('의견을 기각합니다! 포기하지마세요!');
+      } else {
+        document.body.style.background = "#FFFFFF";
+        console.log("취소. 변화 없음");
+      }
+      };
+
+      function copy_to_clipboard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        document.execCommand("Copy");
+        console.log('Copied!');
+      }
+  </script>
+
+  <!-- 과제 끝! -->
+
+</head>
+<body>
+
+  <header id="whoamI">Who am I?</header>
+
+  <div class="whoamI">
+    <div class="flex">
+      <div class="profile-image">
+        <img src="./img/memoji.png" alt="" style="object-fit: contain; height: 300px;">
+        <div class="overlay">
+          <img src="./img/두아리파.jpg" alt="" style="object-fit: fill; height: 300px">
+        </div>
+      </div>
+
+      <div class="text1">
+        <p>이름: 강민지</p>
+        <p>학과: 경제학과</p>
+        <p>파트: 웹</p>
+        <p>생년월일: 1999년 8월 6일 (*^^* ㅎㅎ)</p>
+        <p>이메일:
+        <input id="myInput" value="minji.k1357@gmail.com">
+        <button onclick="copy_to_clipboard()">이메일 복사</button></p>
+
+
+      </div>
+    </div>
+
+    <div class="text2">
+      <p>안녕하세요! 멋쟁이 사자처럼 10기 아기사자입니다!</p>
+      <p>만나서 반가워요!!!!!!!!!!!!</p>
+      <p>아직 부족한 점이 많지만 앞으로 스터디를 통해 더욱 성장하고 싶습니다.</p>
+      <br>
+      <p>스크롤을 내려 저에 대해 알아가보세요!</p>
+    </div>
+
+    <br>
+
+    <div class="button">
+    <button onclick="changeMode()">Night/Day mode</button>
+    </div>
+
+    <br><br><br>
+
+    <ul>
+      <li><a href="#whoamI">Who am I</a></li>
+      <li><a href="#personality">Personality</a></li>
+      <li><a href="#characteristic">Characteristics</a></li>
+      <li><a href="#hobby">Hobby</a></li>
+      <li style="float:right"><a class="active" href="https://www.instagram.com/als._.wl99/"><img src="./img/instagram icon.png" alt="" style="object-fit: fill; height: 14px;"></a></li>
+      <li style="float:right"><a class="active" href="https://github.com/minjik1357"><img src="./img/github icon.png" alt="" style="object-fit: fill; height: 14px;"></a></li>
+    </ul>
+    
+    <div class="personality" id="personality">
+
+    <br>
+
+      <h1>Personality</h1>
+        
+    <br>
+
+      <h4>저는 MBTI 프로과몰입러입니다.</h4>
+      <h4>제 MBTI를 맞춰보세요!! 정말 못맞추시겠다면,, 아래 사진 힌트를 활용하세요!</h4>
+      <h4 onclick="alert('땡!!!!!! 틀렸습니다!!!!!!!!!')" class="answer">1. ESTJ</h4>
+      <h4 onclick="alert('어레레? 전혀 아닙니다!!!!!!!!!')" class="answer">2. INFJ</h4>
+      <h4 onclick="alert('땡!!!!!! 꼴랑 하나맞추셨습니다!!!!!!! ^^..(ㅈㅅ)')" class="answer">3. ENFJ</h4>
+      <h4 onclick="alert('어랍쇼? 비슷했습니다!!!!!!!!!!!')" class="answer">4. ENTP</h4>
+      <h4 onclick="alert('딩!!!!!동!!!!!!!댕!!!!!!!!!!!')" class="answer">5. ESTP</h4>
+      
+      <div class="giveup">
+        <button onclick="confirmModal()">기권하겠습니다</button>
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="estp">
+      <div class="container1">
+        <img src="./img/E.jpg" alt="E" class="img1" style="height: 300px;" hspace=20px>
+        <div class="overlaye">
+          <div class="texte">E!! 근데 이제 낯을 많이 가리는..</div>
+        </div>
+      </div>
+      <div class="container2">
+        <img src="./img/S.png" alt="S" class="img2" style="height: 300px;" hspace=20px>
+        <div class="overlays">
+          <div class="texts">S!! 근데 이제 밸런스게임을 좋아하는..</div>
+        </div>
+      </div>
+      <div class="container3">
+        <img src="./img/T.jpg" alt="T" class="img3" style="height: 300px;" hspace=20px>
+        <div class="overlayt">
+          <div class="textt">T!! me쳤습니까 휴먼?</div>
+        </div>
+      </div>
+      <div class="container4">
+        <img src="./img/P.png" alt="P" class="img4" style="height: 300px;" hspace=20px>
+        <div class="overlayp">
+          <div class="textp">P!! 저도 번개 좋아합니다..</div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+  <h4>맞추셨나요! 맞추셨다면 소정의 선물을..드리지않도록하겠습니다!!!!</h4>
+
+    <br><br>
+
+  <div class="Characteristic" id="characteristic">
+
+    <br>
+
+    <h1>Characteristics</h1>
+  </div>
+
+    <br><br>
+
+    <div class="ch-img-wrap">
+      <img class="ch-img" src="./img/kpop.jpg" alt="kpop">
+      <img class="ch-img" src="./img/apple.jpg" alt="apple">
+      <img class="ch-img" src="./img/pororo.jpeg" alt="pororo">
+    </div>
+
+    <div class="text-wrap">
+      <div class="kpop-text">
+        <h3>정말 그 누구보다 케이팝에 진심인 사람,,</h3>
+        <h3>노래방에 춤추러 갑니다</h3>
+      </div>
+
+      <div class="apple-text">
+        <h3>9년째 애플만 쓰는 진정한 애플 덕후!!!</h3>
+      </div>
+
+      <div class="pororo-text">
+        <h3>노는걸 너어어엉무 좋아하는 뽀로로입니다!!!!!!</h3>
+        <h3>같이 공부도 열심히 하고 놀기도 열심히 놀아요!!</h3>
+      </div>
+    </div>
+
+    <br><br><br>
+
+
+  <div class="hobby" id="hobby">
+    <br>
+    <h1>Hobby</h1>
+  </div>
+
+    <br>
+
+  <h4>제 취미는..</h4>
+  <h4>유튜브 시청입니다!!!!!!!!!!</h4>
+  <h4>재밌거나 흥미로우면 장르 안가리고 무조건 봐요 ㅠㅠ</h4>
+  <h4>최근에 본 영상 3개 추천 좀 하겠습니다..</h4>
+
+    <br>
+
+  <div class="video-wrap">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/hNIyryOc6s4" style="border-spacing: 100px;">
+    </iframe>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/eN5mG_yMDiM">
+    </iframe>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/FV_Rj5Q0LVw">
+    </iframe>
+  </div>
+
+
+    <br><br><br><br><br>
+
+  <footer>
+    여기까지 자기소개 페이지였습니다. 감사합니다! :)
+
+    <br><br>
+
+    <div class="container">
+      <img id="thankyou" class="thankyou" src="./img/제리 인사 전.png" alt="">
+      <br>
+      <button onclick="toggleImg()">제리 인사시키기</button>
+    </div>
+
+    <br>
+
+  </footer>
+  <div id="disqus_thread"></div>
+  <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://lionteam-1-minjikang-1.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script id="dsq-count-scr" src="//lionteam-1-minjikang-1.disqus.com/count.js" async></script>
+</body>
+</html>
